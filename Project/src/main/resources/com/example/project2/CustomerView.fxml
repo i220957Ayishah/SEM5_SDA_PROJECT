@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.CONTROLLERS.CustomerViewController">
+    <tabs>
+        <Tab style="-fx-background-color: B6BBC4;" text="Home Page">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="387.0" fitWidth="759.0" layoutX="-51.0" layoutY="-4.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Pics/bck.jpg" />
+                            </image>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="193.0" layoutX="45.0" layoutY="131.0" stroke="TRANSPARENT" strokeType="INSIDE" width="522.0" />
+                        <Label layoutX="67.0" layoutY="183.0" text="At RentN’Go, we make car rentals easy, affordable, and tailored just for you. Whether you’re &#10;planning a quick getaway, attending a special event, or just need a ride for the day, we’ve &#10;got you covered.Browse through our wide range of cars – from budget-friendly options to &#10;luxurious rides – and choose the one that matches your needs and style. With simple booking, &#10;flexible payment options, and services like car delivery and drivers on request, we ensure you &#10;have the freedom and convenience you deserve.&#10;">
+                            <font>
+                                <Font name="Times New Roman" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="130.0" layoutY="152.0" text="Welcome to RentN’Go – Your Go-To Car Rental Solution!">
+                            <font>
+                                <Font name="Times New Roman Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="294.0" text="Drive your way with RentN’Go!">
+                            <font>
+                                <Font name="Times New Roman Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="502.0" layoutY="331.0" mnemonicParsing="false" text="Logout" />
+                        <Label layoutX="262.0" layoutY="38.0" text="RentN'Go" textFill="#c9c5d9">
+                            <font>
+                                <Font name="Times New Roman" size="27.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="61.0" fitWidth="132.0" layoutX="172.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Pics/Logo-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="249.0" fitWidth="375.0" layoutX="119.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Pics/h3-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="387.0" fitWidth="759.0" layoutX="-51.0" layoutY="-4.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Pics/bck.jpg" />
+                                    </image>
+                                </ImageView>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="193.0" layoutX="45.0" layoutY="131.0" stroke="TRANSPARENT" strokeType="INSIDE" width="522.0" />
+                                <Label layoutX="67.0" layoutY="183.0" text="At RentN’Go, we make car rentals easy, affordable, and tailored just for you. Whether you’re &#10;planning a quick getaway, attending a special event, or just need a ride for the day, we’ve &#10;got you covered.Browse through our wide range of cars – from budget-friendly options to &#10;luxurious rides – and choose the one that matches your needs and style. With simple booking, &#10;flexible payment options, and services like car delivery and drivers on request, we ensure you &#10;have the freedom and convenience you deserve.&#10;">
+                                    <font>
+                                        <Font name="Times New Roman" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="130.0" layoutY="152.0" text="Welcome to RentN’Go – Your Go-To Car Rental Solution!">
+                                    <font>
+                                        <Font name="Times New Roman Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="67.0" layoutY="294.0" text="Drive your way with RentN’Go!">
+                                    <font>
+                                        <Font name="Times New Roman Italic" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Button layoutX="502.0" layoutY="331.0" mnemonicParsing="false" onAction="#showLogIn" text="Logout" />
+                                <Label layoutX="262.0" layoutY="38.0" text="RentN'Go" textFill="#c9c5d9">
+                                    <font>
+                                        <Font name="Times New Roman" size="27.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="61.0" fitWidth="132.0" layoutX="172.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Pics/Logo-removebg-preview.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="249.0" fitWidth="375.0" layoutX="119.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Pics/h3-removebg-preview.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab style="-fx-background-color: B6BBC4;" text="Bookings">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: B6BBC4;">
+                    <children>
+                        <ButtonBar layoutX="225.0" layoutY="220.0" prefHeight="40.0" prefWidth="200.0" />
+                        <SplitPane prefHeight="371.0" prefWidth="600.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="494.0">
+                                    <children>
+                                        <TabPane prefHeight="370.0" prefWidth="600.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+                                            <tabs>
+                                                <Tab text="View Bookings">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: B6BBC4;">
+                                                            <children>
+                                                                <Label fx:id="bCarID" layoutX="124.0" layoutY="185.0" prefHeight="18.0" prefWidth="126.0" style="-fx-background-color: white;" translateY="-7.0" />
+                                                                <Label fx:id="bDriverID" layoutX="309.0" layoutY="185.0" prefHeight="18.0" prefWidth="126.0" style="-fx-background-color: white;" translateY="-7.0" />
+                                                                <Label fx:id="bCharges" layoutX="124.0" layoutY="294.0" prefHeight="18.0" prefWidth="126.0" style="-fx-background-color: white;" translateY="-7.0" />
+                                                                <Label fx:id="bPayed" layoutX="309.0" layoutY="294.0" prefHeight="18.0" prefWidth="126.0" style="-fx-background-color: white;" translateY="-7.0" />
+                                                                <Text layoutX="126.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car ID:" translateY="-7.0" />
+                                                                <Text layoutX="309.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver ID:" translateY="-7.0" />
+                                                                <Text layoutX="126.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Date:" translateY="-7.0" />
+                                                                <Text layoutX="310.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date:" translateY="-7.0" />
+                                                                <Text layoutX="124.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Charges:" translateY="-7.0" />
+                                                                <Text layoutX="309.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Status:" translateY="-7.0" />
+                                                                <ImageView fitHeight="137.0" fitWidth="571.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@Pics/ViewBooking.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                                <ComboBox fx:id="bID" layoutX="210.0" layoutY="64.0" onAction="#listBookingDetails" onMouseClicked="#listBookings" prefWidth="150.0" promptText="Booking ID:" />
+                                                                <Line endX="323.0" endY="-1.52587890625E-5" layoutX="270.0" layoutY="121.0" startX="-269.0" startY="-1.52587890625E-5" stroke="#31304d7a" />
+                                                                <Label fx:id="bIssue" layoutX="124.0" layoutY="234.0" prefHeight="18.0" prefWidth="126.0" style="-fx-background-color: white;" />
+                                                                <Label fx:id="bReturn" layoutX="309.0" layoutY="234.0" prefHeight="18.0" prefWidth="126.0" style="-fx-background-color: white;" />
+                                                                <Button layoutX="250.0" layoutY="330.0" mnemonicParsing="false" onAction="#switchToPayment" text="Return Car" />
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </content>
+                                                </Tab>
+                                                <Tab text="Add Booking">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: B6BBC4;">
+                                                            <children>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: B6BBC4;">
+                                                                    <children>
+                                                                        <Text layoutX="32.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car ID:" translateY="-7.0" />
+                                                                        <Button layoutX="26.0" layoutY="76.0" mnemonicParsing="false" onAction="#showAvailableCars" prefHeight="26.0" prefWidth="147.0" text="Choose a Car" />
+                                                                        <TextField fx:id="bbCarID" layoutX="24.0" layoutY="145.0" prefHeight="26.0" prefWidth="155.0" />
+                                                      <Label layoutX="124.0" layoutY="26.0" text="BOOKING" textFill="#161a30">
+                                                         <font>
+                                                            <Font name="Times New Roman" size="27.0" />
+                                                         </font>
+                                                      </Label>
+                                                                    </children>
+                                                                </AnchorPane>
+                                                                <DatePicker fx:id="bbReturn" layoutX="197.0" layoutY="216.0" prefHeight="26.0" prefWidth="155.0" />
+                                                                <Text layoutX="219.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date:" />
+                                                                <ImageView fitHeight="388.0" fitWidth="221.0" layoutX="371.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@Pics/AddBooking.jpg" />
+                                                                    </image>
+                                                                </ImageView>
+                                                                <Text layoutX="200.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Date:" />
+                                                                <DatePicker fx:id="bbIssue" layoutX="197.0" layoutY="146.0" prefHeight="26.0" prefWidth="157.0" />
+                                                                <Text layoutX="27.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Charges:" />
+                                                                <Label fx:id="bbCharges" layoutX="21.0" layoutY="216.0" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: white;" />
+                                                                <Button layoutX="286.0" layoutY="325.0" mnemonicParsing="false" onAction="#addBooking" text="Confirm" />
+                                                                  <ComboBox fx:id="bbDriver" layoutX="197.0" layoutY="77.0" onMouseClicked="#driverChoice" prefWidth="150.0" promptText="Driver" />
+                                                <Button layoutX="152.0" layoutY="216.0" mnemonicParsing="false" onAction="#calculateChargesPrompt" prefHeight="24.0" prefWidth="27.0" text="?" />
+                                                            </children></AnchorPane>
+                                                    </content>
+                                                </Tab>
+                                                <Tab text="Update Booking">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: B6BBC4;">
+                                                            <children>
+                                                                <ImageView fitHeight="386.0" fitWidth="600.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@Pics/UpdateBooking.jpg" />
+                                                                    </image>
+                                                                </ImageView>
+                                                                <TextField fx:id="ubID" layoutX="88.0" layoutY="122.0" promptText="Booking ID" />
+                                                                <DatePicker fx:id="ubReturn" layoutX="302.0" layoutY="121.0" prefHeight="26.0" prefWidth="158.0" promptText="Return Date" />
+                                                                <Button layoutX="478.0" layoutY="319.0" mnemonicParsing="false" onAction="#updateBooking" text="Confirm" />
+                                                            </children></AnchorPane>
+                                                    </content>
+                                                </Tab>
+                                            </tabs>
+                                        </TabPane>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="paymentTab" style="-fx-background-color: B6BBC4;" text="Payment">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: B6BBC4;">
+                    <children>
+                        <ImageView fitHeight="678.0" fitWidth="415.0" layoutX="147.0" layoutY="-147.0" opacity="0.3" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                            <image>
+                                <Image url="@Pics/PaymentBck.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="222.0" layoutY="39.0" text="PAYMENT" textFill="#161a30">
+                            <font>
+                                <Font name="Times New Roman" size="27.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="pBID" layoutX="94.0" layoutY="126.0" onAction="#setTotalCharges" promptText="Booking ID" />
+                        <Label layoutX="339.0" layoutY="108.0" text="Total Charges" textFill="#161a30" />
+                        <Label fx:id="pCharges" layoutX="323.0" layoutY="127.0" prefHeight="23.0" prefWidth="150.0" style="-fx-background-color: white;" />
+                        <ComboBox fx:id="pMode" layoutX="207.0" layoutY="186.0" opacity="0.83" prefWidth="150.0" promptText="Mode of Payment" />
+                        <Button layoutX="222.0" layoutY="284.0" mnemonicParsing="false" onAction="#returnCar" prefHeight="23.0" prefWidth="121.0" text="Confirm" textFill="#161a30" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab style="-fx-background-color: B6BBC4;" text="Profile">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: B6BBC4;">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@Pics/UserIcon.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="338.0" fitWidth="389.0" layoutX="340.0" layoutY="-176.0" pickOnBounds="true" preserveRatio="true" rotate="21.4">
+                            <image>
+                                <Image url="@Pics/Transition.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="338.0" fitWidth="389.0" layoutX="-78.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" rotate="-155.7">
+                            <image>
+                                <Image url="@Pics/Transition.png" />
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="usrField" layoutX="67.0" layoutY="130.0" promptText="Username" />
+                        <TextField fx:id="emailField" layoutX="408.0" layoutY="130.0" promptText="Email" />
+                        <TextField fx:id="lnameField" layoutX="240.0" layoutY="186.0" promptText="Last Name" />
+                        <TextField fx:id="fnameField" layoutX="66.0" layoutY="186.0" promptText="First Name" />
+                        <TextField fx:id="pnumField" layoutX="67.0" layoutY="237.0" promptText="Phone Number" />
+                        <TextField fx:id="addrField" layoutX="241.0" layoutY="237.0" promptText="Address" />
+                        <ComboBox fx:id="genderBox" layoutX="407.0" layoutY="237.0" prefHeight="26.0" prefWidth="152.0" promptText="Gender" />
+                        <DatePicker fx:id="dobField" layoutX="407.0" layoutY="186.0" prefHeight="26.0" prefWidth="153.0" promptText="DOB" />
+                        <PasswordField fx:id="psrField" layoutX="240.0" layoutY="130.0" promptText="Password" />
+                        <Button layoutX="273.0" layoutY="299.0" mnemonicParsing="false" onAction="#updateCustomer" prefHeight="26.0" prefWidth="84.0" text="Update" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

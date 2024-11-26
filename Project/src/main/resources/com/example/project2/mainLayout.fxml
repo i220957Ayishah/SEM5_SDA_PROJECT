@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.fxml.FXML?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project2.CONTROLLERS.MainController" fx:id="stackPane">
+    <!-- Form1 and Form2 will be dynamically loaded here -->
+</StackPane>
