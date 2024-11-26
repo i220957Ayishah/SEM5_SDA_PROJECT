@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project2.CONTROLLERS.RegistrationController">
+    <children>
+        <ImageView fitHeight="460.0" fitWidth="696.0" layoutX="-5.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Pics/Registartion.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#161a30" height="34.0" layoutX="-7.0" stroke="TRANSPARENT" strokeType="INSIDE" width="610.0" />
+        <Label layoutX="280.0" layoutY="50.0" text="RentN'Go">
+            <font>
+                <Font name="Times New Roman" size="27.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="61.0" fitWidth="132.0" layoutX="180.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Pics/Logo-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="usrField" layoutX="50.0" layoutY="185.0" onAction="#setUsername" promptText="Username" />
+        <TextField fx:id="fnameField" layoutX="50.0" layoutY="232.0" onAction="#setFname" promptText="First Name" />
+        <TextField fx:id="pnumField" layoutX="50.0" layoutY="273.0" onAction="#setPnum" promptText="Phone Number" />
+        <PasswordField fx:id="psrField" layoutX="231.0" layoutY="185.0" onAction="#setPassword" promptText="Password" />
+        <TextField fx:id="lnameField" layoutX="230.0" layoutY="232.0" onAction="#setLname" promptText="Last Name" />
+        <TextField fx:id="addrField" layoutX="230.0" layoutY="273.0" onAction="#setAdress" promptText="Address" />
+        <Button layoutX="275.0" layoutY="324.0" mnemonicParsing="false" onAction="#getDetails" text="Register" />
+        <TextField fx:id="emailField" layoutX="405.0" layoutY="185.0" onAction="#setEmail" promptText="Email" />
+        <DatePicker fx:id="dobField" layoutX="405.0" layoutY="232.0" onAction="#setDob" prefHeight="26.0" prefWidth="150.0" promptText="DOB" />
+        <ComboBox fx:id="genderBox" layoutX="404.0" layoutY="273.0" onAction="#setGender" opacity="0.42" prefWidth="150.0" promptText="Gender" style="-fx-background-color: white;" />
+        <ImageView fitHeight="155.0" fitWidth="263.0" layoutX="182.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Pics/h2-removebg-preview.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
